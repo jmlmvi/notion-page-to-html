@@ -24,7 +24,7 @@ async convert(): Promise<string> {
     const innerText = blockToInnerText(this._block).replace(/(\t)/g, '  ');
 
     return Promise.resolve(
-      `<pre><code ${languageClass}>${innerText}</code></pre>`
+      `<pre>JMHTEST<code ${languageClass}>${innerText}</code></pre>`
     );
 }
 // Fin Modification jmh 15/04/2024
